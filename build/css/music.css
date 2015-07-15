@@ -1,4 +1,5 @@
 @charset "utf-8";
+/*  公共函数 */
 /* 公共样式 */
 * {
   margin: 0px;
@@ -6,17 +7,188 @@
   font-size: 12px;
   color: #ddd;
 }
+img {
+  border: none;
+}
 body {
   background: url("../images/bg.jpg") no-repeat top center;
 }
+.music_rotae {
+  -webkit-animation: rosan 5s infinite linear;
+}
+@-webkit-keyframes rosan {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
 /* 导航 */
-.music {
+#music {
   background: url('../images/banner_bg.jpg') no-repeat;
   width: 960px;
-  height: 250px;
+  height: 250px ;
   margin: 50px auto;
 }
-.music ul {
+#music ul {
   list-style: none;
+  position: relative;
+}
+#music ul .m_1 {
+  border-radius: 30px;
+  top: 30px;
+  left: 10px;
+  position: absolute;
+}
+#music ul .m_1 a img {
+  border-radius: 30px;
+}
+#music ul .m_2 {
+  top: 100px;
+  left: 70px;
+  position: absolute;
+}
+#music ul .m_2 a img {
+  border-radius: 45px;
+}
+#music ul .m_3 {
+  top: 50px;
+  left: 170px;
+  position: absolute;
+}
+#music ul .m_3 a img {
+  border-radius: 30px;
+}
+#music ul .m_4 {
+  top: 170px;
+  left: 190px;
+  position: absolute;
+}
+#music ul .m_4 a img {
+  border-radius: 30px;
+}
+#music ul .m_5 {
+  top: 30px;
+  left: 250px;
+  position: absolute;
+}
+#music ul .m_5 a {
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  background: blue;
+  display: block;
+}
+#music ul .m_6 {
+  top: 65px;
+  left: 305px;
+  position: absolute;
+}
+#music ul .m_6 a img {
+  border-radius: 62px;
+}
+#music ul .m_7 {
+  top: 135px;
+  left: 435px;
+  position: absolute;
+}
+#music ul .m_7 a img {
+  border-radius: 30px;
+}
+#music ul .m_8 {
+  top: 20px;
+  left: 480px;
+  position: absolute;
+}
+#music ul .m_8 a img {
+  border-radius: 45px;
+}
+#music ul .m_9 {
+  top: 130px;
+  right: 315px;
+  position: absolute;
+}
+#music ul .m_9 a img {
+  border-radius: 30px;
+}
+#music ul .m_my {
+  top: 40px;
+  right: 30px;
+  position: absolute;
+  text-align: center;
+}
+#music ul .m_my a img {
+  border-radius: 50px;
+}
+#music ul .m_my p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+/* 播放器*/
+#play {
+  width: 563px;
+  height: 115px;
+  background: #000;
+  left: 0px;
+  bottom: 40px;
+  position: fixed;
+  border-radius: 5px;
+}
+#play .album {
+  margin: 10px;
+  float: left;
+}
+#play .panel .title {
+  float: left;
+  line-height: 115px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#play .panel .btn {
+  float: left;
+  margin: 35px 50px;
+}
+#play .panel .btn a.b_pre {
+  margin-top: 7px;
+  background: url("../images/player_bg.png") -72px 0px;
+  width: 36px;
+  height: 28px;
+  display: block;
+  float: left;
+}
+#play .panel .btn a.b_pre:hover {
+  background: url("../images/player_bg.png") -72px -32px;
+}
+#play .panel .btn a.b_play {
+  padding: 0px 8px;
+  background: url("../images/player_bg.png") -98px 0px;
+  width: 42px;
+  height: 42px;
+  display: block;
+  float: left;
+}
+#play .panel .btn a.b_play:hover {
+  background: url("../images/player_bg.png") -98px -42px;
+}
+#play .panel .btn a.b_next {
+  margin-top: 7px;
+  background: url("../images/player_bg.png") -140px 0px;
+  width: 36px;
+  height: 28px;
+  display: block;
+  float: left;
+}
+#play .panel .btn a.b_next:hover {
+  background: url("../images/player_bg.png") -140px -32px;
+}
+#play .packup {
+  float: right;
+  background: url("../images/player_bg.png") no-repeat;
+  width: 22px;
+  height: 115px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=css/music.css.map */
