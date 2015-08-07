@@ -144,12 +144,13 @@ body {
 #play .panel .title {
   float: left;
   line-height: 115px;
+  width: 150px;
   font-size: 20px;
   font-weight: bold;
 }
 #play .panel .btn {
   float: left;
-  margin: 35px 50px;
+  margin: 35px 70px;
 }
 #play .panel .btn a.b_pre {
   margin-top: 7px;
@@ -158,12 +159,12 @@ body {
   height: 28px;
   display: block;
   float: left;
+  margin-right: 8px;
 }
 #play .panel .btn a.b_pre:hover {
   background: url("../images/player_bg.png") -72px -32px;
 }
 #play .panel .btn a.b_play {
-  padding: 0px 8px;
   background: url("../images/player_bg.png") -98px 0px;
   width: 42px;
   height: 42px;
@@ -173,6 +174,17 @@ body {
 #play .panel .btn a.b_play:hover {
   background: url("../images/player_bg.png") -98px -42px;
 }
+#play .panel .btn a.b_stop {
+  background: url("../images/player_bg.png") -284px -88px;
+  width: 42px;
+  height: 42px;
+  display: block;
+  float: left;
+  display: none;
+}
+#play .panel .btn a.b_stop:hover {
+  background: url("../images/player_bg.png") -326px -88px;
+}
 #play .panel .btn a.b_next {
   margin-top: 7px;
   background: url("../images/player_bg.png") -140px 0px;
@@ -180,15 +192,25 @@ body {
   height: 28px;
   display: block;
   float: left;
+  margin-left: 10px;
 }
 #play .panel .btn a.b_next:hover {
   background: url("../images/player_bg.png") -140px -32px;
 }
-#play .packup {
+#play .pack {
   float: right;
   background: url("../images/player_bg.png") no-repeat;
   width: 22px;
   height: 115px;
   cursor: pointer;
+}
+#play .packup {
+  background: url("../images/player_bg.png") no-repeat;
+}
+#play .packdown {
+  background: url("../images/player_bg.png") no-repeat -46px 0px;
+}
+#play .packing {
+  background: url("../images/player_bg.png") no-repeat -23px 0px;
 }
 /*# sourceMappingURL=css/music.css.map */

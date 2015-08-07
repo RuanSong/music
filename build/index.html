@@ -8,32 +8,45 @@
 	<link href="css/music.css"" rel="stylesheet"  type="text/css">
 </head>
 <body>
+	<!-- music start-->
 	<div id="music">
 		<ul>
-			<li class="m_1"><a href="#" class="song"><img src="images/1.jpg" width="60" height="60" alt="图片"></a></li> 
-			<li class="m_2"><a href="#" class="song"><img src="images/2.jpg" width="90" height="90" alt="图片"></a></li> 
-			<li class="m_3"><a href="#" class="song"><img src="images/3.jpg" width="60" height="60" alt="图片"></a></li> 
-			<li class="m_4"><a href="#" class="song"><img src="images/4.jpg" width="60" height="60" alt="图片"></a></li>
-			<li class="m_5"><a href="#"></a></li> 
-			<li class="m_6"><a href="#" class="song"><img src="images/5.jpg" width="124" height="124" alt="图片"></a></li> 
-			<li class="m_7"><a href="#" class="song"><img src="images/6.jpg" width="60" height="60" alt="图片"></a></li> 
-			<li class="m_8"><a href="#" class="song"><img src="images/7.jpg" width="90" height="90" alt="图片"></a></li> 
-			<li class="m_9"><a href="#" class="song"><img src="images/8.jpg" width="60" height="60" alt="图片"></a></li> 
-			<li class="m_my"><a href="#" class="song"><img src="images/my.gif" width="100" height="100" alt="图片"></a><p>七号人格-Rosan</p></li> 
+			<li class="m_1"><a href="#" class="song" data-title="咱们结婚吧"><img src="images/1.jpg" width="60" height="60" alt="图片"></a></li> 
+			<li class="m_2"><a href="#" class="song" data-title="当你老了"><img src="images/2.jpg" width="90" height="90" alt="图片"></a></li> 
+			<li class="m_3"><a href="#" class="song" data-title="母亲"><img src="images/3.jpg" width="60" height="60" alt="图片"></a></li> 
+			<li class="m_4"><a href="#" class="song" data-title="相亲相爱一家人"><img src="images/4.jpg" width="60" height="60" alt="图片"></a></li>
+			<li class="m_5"><a href="#" class="song" data-title="未知歌曲"></a></li> 
+			<li class="m_6"><a href="#" class="song" data-title="烛光里的妈妈"><img src="images/5.jpg" width="124" height="124" alt="图片"></a></li> 
+			<li class="m_7"><a href="#" class="song" data-title="我可以抱你吗"><img src="images/6.jpg" width="60" height="60" alt="图片"></a></li> 
+			<li class="m_8"><a href="#" class="song" data-title="菊花台"><img src="images/7.jpg" width="90" height="90" alt="图片"></a></li> 
+			<li class="m_9"><a href="#" class="song" data-title="开不了口"><img src="images/8.jpg" width="60" height="60" alt="图片"></a></li> 
+			<li class="m_my"><a href="#"><img src="images/my.gif" width="100" height="100" alt="图片"></a><p>七号人格-Rosan</p></li> 
 		</ul>
 	</div>
+	<!-- music end-->
+
+	<!--play start-->
 	<div id="play">
 		<div class="album"><img src="images/1.jpg" height="90" width="90" width="专辑"></div>
+		<!--panel start-->
 		<div class="panel">
 			<div class="title">这是一首测试歌曲</div>
 			<div class="btn">
 				<a href="#" class="b_pre"></a>
 				<a href="#" class="b_play"></a>
+				<a href="#" class="b_stop"></a>
 				<a href="#" class="b_next"></a>
 			</div>
 		</div>
-		<div class="packup"></div>
+		<!--panel end -->
+		<div class="pack packup"></div>
 	</div>
+	<!--play end-->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/music-common.js"></script>
+	<script type="text/javascript" src="js/music-panel.js"></script>
+	<script type="text/javascript" src="js/music-box.js"></script>
+
 </body>
 </html>
   
